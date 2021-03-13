@@ -1,0 +1,403 @@
+/*******
+Navigation horizontal
+********/
+.navhorizontal{
+	margin: 0px;
+	padding: 0px;
+	background-color:#ff7e5f;
+	width: 100%;
+	max-height: 100%;
+}
+.navhorizontal ul{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.navhorizontal li{
+	display: inline;
+	margin: 0px;
+	border: thin;
+	font-size: 20px;
+	float: left;
+}
+
+.navhorizontal a {
+	text-decoration: none;
+	display:block;
+	text-align: center;
+	padding: 14px 16px;
+	color:white;
+}
+
+.navhorizontal a:hover {
+	background-color: white;
+	color:black;
+}
+
+.active{
+	background-color:#feb47b ;
+}
+
+.navhorizontal img {
+	width: 100px;
+	max-height: 100%;
+	padding: 0px;
+	margin-left: 6px;
+}
+
+
+/********
+Log in
+***********/
+input[type=text] {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ee9ca7;
+  border-radius: 20px;
+}
+
+input[type=text]:focus {
+  background: linear-gradient(90deg,#FF795B 0%,#AF2F3C 100%);
+}
+input[type=password] {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ee9ca7;
+  border-radius: 20px;
+}
+
+input[type=password]:focus {
+  background: linear-gradient(90deg,#FF795B 0%,#AF2F3C 100%);
+}
+
+#register, #login, #close{
+	padding: 8px 16px;
+	margin:5px 2px;
+	border-radius: 50em;
+	font-size: 1em;
+	background-color: white;
+  	border: none;
+  	color: #AF2F3C;
+  	text-decoration: none;
+  	display: inline-block;
+  	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+  	cursor: pointer;
+}
+
+#register:hover, #login:hover{
+	background-color: #AF2F3C;
+	color:white;
+}
+
+/*******
+Search Bar
+********/
+
+.searchbar {
+	display:inline-block;
+	font-size: 17px;
+	padding-top: 5px;
+	position:absolute;
+	right:10px;
+}
+
+.searchbar button{
+	float: right;
+	margin-top: 1px;
+	margin-left:1px;
+	background: white;
+	font-size: 28px;
+	border: 2px solid #ee9ca7;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.searchbar button:hover{
+	background-color:#FF795B;
+	color:white;
+}
+.searchbar button:hover i{
+	color:white;
+}
+
+#right{
+	float: right;
+}
+
+#nomargin{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*******
+body
+********/
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+/*for sidebar*/
+h1 {
+	color: orange;
+	font-size: 1.5em;
+}
+
+.sidebar{
+	background: linear-gradient(180deg, #e53935 0%, #e35d5b 100%);
+	width: 5%;
+	margin: 0px;
+	overflow-x: hidden;
+	-webkit-flex: 0.52;
+  	-ms-flex: 0.52;
+  	flex:0.52;
+	color:white;
+}
+
+.sidebar a{
+	text-decoration: none;
+	color:white;
+}
+
+.sidebar a:hover{
+	color:orange;
+}
+
+.sidebar h1 {
+	padding: 15px 0px;
+	margin: 0px;
+	box-shadow: 1px 1px #000;
+	text-align: center;
+	background:linear-gradient(180deg,#EF0726  0%, #BF1128 100%);
+}
+
+.sidebar h3{
+	padding: 20px;
+	margin: 0px;
+	background-color: #D60622;
+}
+
+.sidebar li{
+	text-decoration: none;
+	display: block;
+	padding: 10px 5px;
+}
+
+/*for intro*/
+h2 {
+	letter-spacing: 2px;
+	font-size: 2em;
+	padding: 10px 5px;
+}
+
+section{
+	padding: 0px;
+	margin: 0px;
+	display: -webkit-flex;
+  	display: flex;
+	clear: both;
+}
+article {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	padding: 0px;
+	width: 85%;
+}
+/*****footer*****/
+footer {
+	padding: 75px;
+	margin: 0px;
+
+	background:linear-gradient(180deg, #ED213A 0%,#93291E 100%);
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;
+	color:white;
+}
+
+footer a:hover{
+	color:black;
+}
+
+.musicbar{
+	width:100%;
+	background:linear-gradient(180deg, #ff7e5f 0%, #feb47b 100%);
+	position:fixed;
+	bottom:0;
+	padding-left:40%;
+}
+
+
+/******
+News feed
+******/
+
+.feed
+{
+	height:300px;
+	overflow: hidden;
+	position: relative; /*provide positions for arrows*/
+}
+
+.feed:hover{
+	background-color: darkslategrey;
+}
+.feed_content h3
+{
+	height: auto;
+	padding:15px 10px;
+	width:100%;
+	line-height: 30px;
+}
+
+.feed_content
+{
+	position: absolute;
+}
+.feeds{
+	font-size: 1em;
+	padding: 10px 25px;
+}
+.up_arrow, .down_arrow
+{
+	position: absolute;
+	left: 40%;
+	width: 50px;
+	height: auto;
+	opacity: 0.4;
+	z-index: 1; /*in front of all element*/
+}
+
+.up_arrow:hover, .down_arrow:hover
+{
+	opacity: 1;
+}
+
+.down_arrow
+{
+	bottom: 0px;
+	transform: rotateZ(180deg);
+}
+
+/*******
+Modal
+********/
+/* Add padding to container elements */
+.login {
+	padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #474e5d;
+	padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+	background-color: #4CAF50;
+	text-align: center;
+	width: 100%;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover, .close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+ .login input[type=text], .login input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+}
+
+.login input[type=text]:focus, .login input[type=password]:focus {
+  outline: none;
+}
+/******
+Reaponaive CSS
+*******/
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}

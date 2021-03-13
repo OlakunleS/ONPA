@@ -1,0 +1,33 @@
+{
+  "horizontal navigation bar": [
+    "Home",
+    "About",
+    "Tours",
+    "Shop",
+    "Register",
+    "Login",
+    "Search bar"
+  ],
+  "vertical navigation bar": {
+    "subscribed": [
+      "Artists","Producers","Choreographers"
+    ],
+    "trending":[
+      "Apple announces new noise cancellation AirPods","Fischerspooner’s Casey Spooner Says Madonna Didn’t Pay or Credit Him for Madame X Song","Kanye’s New Opera Nebuchadnezzar Live Stream Announced","Watch King Princess Perform “1950” and “Hit the Back” on SNL"
+      ]
+  },
+  "ban":"sell your merch",
+  "works":"how it works",
+  "cartbox":{
+    "select":["Lover by Taylor Swift","The Singles Collection by the Beatles","Master Of Puppets Deluxe by Metallica"],
+    "condition":["new","used-very good","used-good","used-acceptable"],
+    "button":"add to cart",
+    "cartlist":["cart","icon","add to cart button"]
+  },
+  "information":{
+    "biling address":[
+      "full name","email","address","city","preference","state","zip","note"],
+    "payment":[
+      "accepted cards","card name","card number","exp month","exp year","CVV","Shipping address same as billing","receipt","submit button","reference"]
+    }
+  }

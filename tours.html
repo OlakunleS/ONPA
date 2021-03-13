@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ONPA</title>
+		<link rel="stylesheet" type="text/css" href="../ONPA/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../ONPA/pagecss/tours.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.1.1.min.js"></script>
+		<script src="../JavaScript/main.js"></script>
+		<script src="tours.js"></script>
+	</head>
+
+	<body>
+		<!-- Navigation Bar Horizontal -->
+		<nav class="navhorizontal">
+		<ul >
+			<li>
+				<img src="img/onpalogo.png" alt="ONPA">
+			</li>
+			<li title="Home">
+				<a href="index.html">Home</a>
+			</li>
+			
+			<li title="About">
+				<a href="about.html">About</a>
+			</li>
+			
+			<li title="Tour">
+				<a class="active">Tours</a>
+			</li>
+			
+			<li title="Shop">
+				<a href="shop.html">Shop</a>
+			</li>
+			<li>
+					<!-- Login Pop up screen -->
+					<a href="../signup/signup.html" id="register">Register</a>
+					<button onclick="document.getElementById('popin').style.display='block'" id="register">Login</button>
+				</li>
+				<li class="searchbar">
+					<form action="../action_page.php">
+						<input type=text list=“searchbar” placeholder="Search..."/>
+						<button type="submit"><i class="fa fa-search"></i></button>
+						<datalist id=“searchbar”>
+							<option value=“Musician” />
+							<option value=“Album” />
+							<option value=“Trailer” />
+						</datalist>
+						</form>
+				</li>
+				
+		</ul>
+		</nav>
+		<div id="popin" class="modal">
+		  <span onclick="document.getElementById('popin').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  <form class="modal-content" action="/action_page.php">
+			<div class="login">
+			  <h1>Log In</h1>
+			  <p>Please fill in this form to log back in.</p>
+			  <hr>
+			  <label for="email"><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
+
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <label>
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+			  </label>
+
+			  <div class="clearfix">
+				<button type="submit" class="signupbtn">Log In</button>
+			  </div>
+			</div>
+		  </form>
+		</div>
+		<section>
+			<div class="sidebar">
+				<h1><i class="fas fa-bell"style="margin-right: 5px"></i>Subscribed</h1>
+				<h3>Artists</h3>
+				<ul id="artists">
+					<li><a href="../account/account.html">User 1</a></li>
+					<li><a href="../account/account.html">User 2</a></li>
+					<li><a href="../account/account.html">User 3</a></li>
+				</ul>
+				<h3>Producers</h3>
+				<ul id="producers">
+					<li><a href="../account/account.html">User 1</a></li>
+					<li><a href="../account/account.html">User 2</a></li>
+					<li><a href="../account/account.html">User 3</a></li>
+				</ul>
+				<h3>Choreographers</h3>
+				<ul id="Choreographers">
+					<li><a href="../account/account.html">User 1</a></li>
+					<li><a href="../account/account.html">User 2</a></li>
+					<li><a href="../account/account.html">User 3</a></li>
+				</ul>
+				<h1><i class="fas fa-fire" style="color:orange;margin-right: 5px"></i>Trending</h1>
+				<div class="feed">
+					<img src="../img/up_arrow.png" class="up_arrow" />
+					<img src="../img/up_arrow.png" class="down_arrow" />
+					<div class="feed_content">
+						<p class="feeds"><a href="../news/news1.html">Apple announces new noise cancellation AirPods</a></p>
+						<p class="feeds"><a href="../news/news2.html">Fischerspooner’s Casey Spooner Says Madonna Didn’t Pay or Credit Him for Madame X Song</a></p>
+						
+						<p class="feeds"><a href="../news/news3.html">Kanye’s New Opera Nebuchadnezzar Live Stream Announced</a></p>
+						<p class="feeds"><a href="../news/news4.html">Watch King Princess Perform “1950” and “Hit the Back” on SNL</a></p>
+					</div>
+					
+				</div>
+			</div>
+
+			<article>
+					<div id="tourwrap">
+					<h3 id="event" class="head">Events</h3>
+					</div>
+				<div id="content">
+					<div id="remove">
+						<div id="ticket">
+						<img src="../img/tickets.png" alt="ticket" id="imgticket">
+						</div>
+
+						<div id="reference">
+							Icons made by <a href="https://www.flaticon.com/authors/pongsakornred" title="pongsakornRed">pongsakornRed</a> from <a href="https://www.flaticon.com/"  title="Flaticon">www.flaticon.com</a>
+						</div>	
+						<p id="text" onclick="proceed()">Looking for a tour?</p>
+					</div>										
+					
+				</div>
+				
+				<!--Image gallery-->
+				<div id="popup" class="popup_plane" onclick="hide_popup();">
+					<figure>
+						<img id="popup_image" src="../img/Menopause The Musical.jfif" alt="Menopause The Musical"/>
+						<figcaption id="popup_caption">Menopause The Musical</figcaption>
+					</figure>
+				</div>
+						<div id="gallery">
+					<figure onclick='show_popup("../img/Menopause The Musical.jfif", "Menopause The Musical<br/>Fri., Nov. 29, 7:30 p.m. – Sat., Nov. 30, 2:00 a.m.");'>
+						<img class="wide" src="../img/Menopause The Musical.jfif" alt="Menopause The Musical" title="Menopause The Musical" />
+					</figure>
+					<figure onclick='show_popup("../img/Geoffroy 11.28.jfif", "Geoffroy<br/>Thu., Nov. 28, 7:00 p.m.");'>
+						<img class="tall" src="../img/Geoffroy 11.28.jfif" alt="Geoffroy" title="Geoffroy" />
+					</figure>
+					<figure onclick='show_popup("../img/A Moonlit Winter Eve with Tonal Eclipse 11.30.jfif", "A Moonlit Winter’s Eve with Tonal Eclipse<br/>Sat., Nov. 30, 7:00 p.m. – 10:00 p.m.");'>
+						<img class="wide" src="../img/A Moonlit Winter Eve with Tonal Eclipse 11.30.jfif" alt="A Moonlit Winter's Eve with Tonal Eclipse" title="A Moonlit Winter's Eve with Tonal Eclipse" />
+					</figure>
+					<figure onclick='show_popup("../img/Big Wreck.jfif", "Big Wreck<br/>Fri., Nov. 29, 7:00 p.m. – 10:00 p.m.");'>
+						<img class="wide" src="../img/Big Wreck.jfif" alt="Big Wreck" title="Big Wreckr" />
+					</figure>
+					<figure onclick='show_popup("../img/Current Swell 11.30 7-11.jfif", "Current Swell<br/>Sat., Nov. 30, 7:00 p.m. – 11:00 p.m.");'>
+						<img class="wide" src="../img/Current Swell 11.30 7-11.jfif" alt="Current Swell" title="Current Swell" />
+					</figure>
+					<figure onclick='show_popup("../img/Trailer Park Boys.jfif", "Trailer Park Boys<br/>Sun., Dec. 1, 8:00 p.m.");'>
+						<img class="wide" src="../img/Trailer Park Boys.jfif" alt="Trailer Park Boys" title="Trailer Park Boys" />
+					</figure>
+				</div>
+
+			</article>
+		</section>
+		
+		<footer>
+			<p style="color:white;">Designed By Olakunle and Xiaoman</p>
+			
+			<a href="privacy.html">&copy;Privacy</a>
+			<br>
+			<a href="terms.html">Terms of Use</a>
+		</footer>
+		
+	</body>
+</html>

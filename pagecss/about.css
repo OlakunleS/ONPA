@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*ban and title*/
+#aboutwrap {
+	/*bg*/
+	background-image: url("../img/mourad-saadi.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*layout*/
+	height: 200px;
+	/*font*/
+	line-height: 2em;
+	font-size: 1.5em;
+	font-family: brawler;
+	color: white;
+	/*verticle centering*/
+	display:table;
+	width:100%;
+}
+.head{
+	font-size:2.5em;
+	text-shadow: 1px 1px #FCAA18;
+	text-align: center;
+}
+#origins{
+	background-color: rgba(0,0,0,0.5);
+	/*verticle centering*/
+	display:table-cell;
+	vertical-align: middle;
+}
+
+/*paragraph*/
+#steps{
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 30px;
+	/*bg*/
+	background-color: rgba(241, 39, 17,0.3);
+	border-radius: 20px;
+	box-shadow: 1px 1px grey;
+	margin:0px 20% 30px 20%;
+	padding:20px 10px 50px 10px;
+}
+#steps h1{
+	color:white;
+}
+#intro{
+	/*layout*/
+	padding:50px 20% 10px 20%;
+	/*text*/
+	text-indent: 40px;
+	line-height:1.5em;
+	font-size: 1.25em;
+}

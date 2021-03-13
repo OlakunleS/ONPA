@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*title*/
+#tourwrap {
+	/*bg*/
+	background-image: url("../img/mourad-saadi.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*layout*/
+	margin: 0px;
+	height: 200px;
+	/*font*/
+	line-height: 2em;
+	font-size: 1.5em;
+	font-family: brawler;
+	color: white;
+	/*verticle centering*/
+	display:table;
+	width:100%;
+}
+.head{
+	font-size:2.5em;
+	text-shadow: 1px 1px #FCAA18;
+	text-align: center;
+}
+#event{
+	background-color: rgba(0,0,0,0.5);
+	/*verticle centering*/
+	display:table-cell;
+	vertical-align: middle;
+}
+
+/*image*/
+#imgticket{
+	display: block;
+	margin:20px auto 0px auto;
+	width:40%;
+}
+
+/*text*/
+#text{
+	display: block;
+	text-align: center;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+/*gallery*/
+
+#gallery{
+	margin-left: 10%;
+	display: none;
+}
+
+#gallery figure
+{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+
+#gallery figure img.tall
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+#gallery figure img.wide
+{
+	position: absolute;
+	top: 0px;
+	left: -30%;
+	height: 100%;
+	width: auto;
+}
+
+#gallery figure:hover
+{
+	box-shadow: 1px 1px 50px orange;
+}
+
+/*----------------------*/
+
+.popup_plane
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 1;
+	transition: opacity 0.5s;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow-y: scroll;
+}
+
+.popup_plane figure
+{
+	display: block;
+	background-color: white;
+	border-radius: 1em;
+	margin: 1em auto;
+	padding: 1em;
+	max-width: 500px;
+}
+
+.popup_plane figure img
+{
+	max-width: 100%;
+	margin-left: 20%;
+	margin-right: auto;
+	margin-bottom: 0.5em;
+}
+
+.popup_plane figcaption
+{	
+	text-align: center;
+}
+
+
+
+/*layout*/
+#content{
+	text-indent: 30px;
+}
+
+#content p{
+	font-size: 1.25em;
+	text-align: center;
+}
+
+table{
+	position:absolute;
+	left:40%;
+	display:block;
+}
+
+/*reference*/
+#reference{
+	color:gainsboro;
+	text-align: center;
+	margin:10px 0 20px 0;
+}
+
+#reference a{
+	text-decoration: none;
+	color:gainsboro;
+}

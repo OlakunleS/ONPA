@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ONPA</title>
+		<link rel="stylesheet" type="text/css" href="../ONPA/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../ONPA/pagecss/news.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.1.1.min.js"></script>
+		<script src="../JavaScript/main.js"></script>
+	</head>
+	<body>
+		<!-- Navigation Bar Horizontal -->
+		<nav class="navhorizontal">
+		<ul >
+			<li>
+				<img src="img/onpalogo.png" alt="ONPA">
+			</li>
+			<li title="Home">
+				<a href="index.html">Home</a>
+			</li>
+			
+			<li title="About">
+				<a href="about.html">About</a>
+			</li>
+			
+			<li title="Tour">
+				<a href="tours.html"> Tours </a>
+			</li>
+			
+			<li title="Shop">
+				<a href="shop.html">Shop</a>
+			</li>
+			<li>
+					<!-- Login Pop up screen -->
+				<a href="../signup/signup.html" id="register">Register</a>
+				<button type="popup" onclick="showLogin()" id="login">Login</button>
+				<li class="searchbar">
+					<form action="../action_page.php">
+						<input type=text list=“searchbar” placeholder="Search..."/>
+						<button type="submit"><i class="fa fa-search"></i></button>
+						<datalist id=“searchbar”>
+							<option value=“Musician” />
+							<option value=“Album” />
+							<option value=“Trailer” />
+						</datalist>
+						</form>
+				</li>
+				
+		</ul>
+		</nav>
+			<section>
+			<div class="sidebar">
+				<h1><i class="fas fa-bell"style="color:orange;margin-right: 5px"></i>Subscribed</h1>
+				<h3><a href="../account/account.html">Artists</a></h3>
+				<h3><a href="../account/account.html">Producers</a></h3>
+				<h3><a href="../account/account.html">Choreographers</a></h3>
+				<div class="feed">
+					<h1><i class="fas fa-fire" style="color:orange;margin-right: 5px"></i>Trending</h1>
+					<h3><a href="../news/news.html">News 1</a></h3>
+					<h3><a href="../news/news.html">News 2</a></h3>
+					<h3><a href="../news/news.html">News 3</a></h3>
+				</div>
+			</div>
+		<article>
+			<div id="account">
+				<form>
+					<fieldset id="lock">
+						<legend>Account:</legend>
+								Username:
+						<input type="text" name="username" placeholder="Username"/><br/>
+								Password :
+						<input type="password" name="password" placeholder="Password"/><br/>
+						<input type="submit" id="login" value="Submit"/>
+						<button type="popup" id="login" id="close">Close</button>
+					</fieldset>		
+				</form>
+			</div>
+		<div id="content">
+           <h1>Apple announces new noise cancellation AirPods</h1>
+			<img src="../img/AirPods-Pro.png" id="newsimg" alt="airpod pro">
+           <h4>AirPods Pro arrive in stores this Wednesday</h4>
+			<h4>by nina corcornaon Oct 28, 2019, 2:32PM</h4>
+           <p id="p1">
+               AirPods are going where no earbuds have gone before: noise cancellation. Apple will release the latest generation of their in-ear headphones, called AirPods Pro, on Wednesday, October 30th. They arrive almost three years after the first AirPods went on sale in 2016.<br><br>How do you cancel outside noise other than by blasting the volume louder than necessary? If you’re Apple, you do so by creating an “innovative vent system” that equalizes pressure and by using two microphones to “continuously adapt to each individual ear and headphone fit.” The first microphone faces outwards to detect and analyze environmental noise. It then cancels out that background noise by creating “an equivalent anti-noise.” The second microphone faces the ear and cancels the remaining noise it detects. Supposedly this noise cancellation technique adapts the sound signal 200 times per second.<br><br>Not trying to block the world out? “Transparency Mode” allows a user to hear the environment around them while listening to music by leaving “just the right amount of noise cancellation active.”<br><br>In addition to the Active Noise Cancelation technology, AirPods Pro also promise “superior, immersive sound” with Adaptive EQ. This means the earbuds automatically tune the low- and mid-frequencies of the music to the shape of the user’s ear, which in turn extends the battery life. They also come in a new lightweight, in-ear fit. Each earbud comes with three different sizes of flexible silicone tips to conform to your ear’s contours.<br><br>“AirPods are the best-selling headphones in the world. The one-tap setup experience, incredible sound and iconic design have made them a beloved Apple product, and with AirPods Pro, we’re taking the magic even further,” said Phil Schiller, Apple’s senior vice president of Worldwide Marketing. “The new in-ear AirPods Pro sound amazing with Adaptive EQ, fit comfortably with flexible ear tips and have innovative Active Noise Cancellation and Transparency mode. We think customers are going to love this new addition to the AirPods family.”<br><br>AirPods Pro will be available for $249. They’re available to pre-order from Apple’s website or they can be purchased in person at Apple stores starting on October 30th. This leaves plenty of time to do an updated Apple commercial costume for Halloween — though, to be fair, Conan O’Brien thought of that first.
+           </p>
+			<p id="reference">News from https://consequenceofsound.net/2019/10/apple-noise-cancellation-airpods-pro/</p>
+		</div>
+				</article>
+		</section>
+				
+		<div class="musicbar">
+				<audio controls>
+					<source src="../TheFireBeat.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+		
+		
+		<footer>
+			<p style="color:white;">Designed By Olakunle and Xiaoman</p>
+			
+			<a href="privacy.html">&copy;Privacy</a>
+			<br>
+			<a href="terms.html">Terms of Use</a>
+		</footer>
+		
+	</body>
+</html>

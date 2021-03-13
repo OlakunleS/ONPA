@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8?>
+<home>
+	<nav>
+		<Home>Home Page</Home>
+		<About>About Page</About>
+		<Tours>Tour Page</Tours>
+		<Shop>Shop Page</Shop>
+		<Register>Sign Up Page</Register>
+		<Login>Login Form</Login>
+	</nav>
+	<Subscribed>
+		<Artists>
+			<Artist>User 1</Artist>
+			<Artist>User 2</Artist>
+			<Artist>User 3</Artist>
+		</Artists>
+		<Producers>
+			<Producer>User 1</Producer>
+			<Producer>User 2</Producer>
+			<Producer>User 3</Producer>
+		</Producers>
+		<Choreographers>
+			<Choreographer>User 1</Choreographer>
+			<Choreographer>User 2</Choreographer>
+			<Choreographer>User 3</Choreographer>
+		</Choreographers>
+	</Subscribed>
+	<Trending>
+		<Trend>Apple announces new noise cancellation AirPods</Trend>
+		<Trend>Fischerspooner’s Casey Spooner Says Madonna Didn’t Pay or Credit Him for Madame X Song</Trend>
+		<Trend>Kanye’s New Opera Nebuchadnezzar Live Stream Announced</Trend>
+		<Trend>Watch King Princess Perform “1950” and “Hit the Back” on SNL</Trend>
+	</Trending>
+	<Sections>
+		<section>Join The Wave</section>
+		<section>Make your music hub</section>
+		<section>Explore other talent</section>
+	</Sections>
+	<footer>
+		<copyright>Olakunle & Xiaoman</copyright>
+	</footer>
+</home>

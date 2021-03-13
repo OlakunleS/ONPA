@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ONPA</title>
+		<link rel="stylesheet" type="text/css" href="../ONPA/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../ONPA/pagecss/account.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.1.1.min.js"></script>
+		<script src="../JavaScript/main.js"></script>
+	</head>
+	<body>		
+		<nav class="navhorizontal">
+		<ul >
+			<li>
+				<img src="../img/onpalogo.png" alt="ONPA">
+			</li>
+			<li title="Home">
+				<a href="index.html">Home</a>
+			</li>
+			
+			<li title="About">
+				<a href="about.html">About</a>
+			</li>
+			
+			<li title="Tour">
+				<a href="tours.html"> Tours </a>
+			</li>
+			
+			<li title="Shop">
+				<a href="shop.html">Shop</a>
+			</li>
+			<li>
+					<!-- Login Pop up screen -->
+					<a href="../signup/signup.html" id="register">Register</a>
+					<button onclick="document.getElementById('popin').style.display='block'" id="register">Login</button>
+				</li>
+				
+				<li class="searchbar">
+					<form action="../action_page.php">
+						<input type=text list=“searchbar” placeholder="Search..."/>
+						<button type="submit"><i class="fa fa-search"></i></button>
+						<datalist id=“searchbar”>
+							<option value=“Musician” />
+							<option value=“Album” />
+							<option value=“Trailer” />
+						</datalist>
+						</form>
+				</li>
+				
+		</ul>
+		</nav>
+		<div id="popin" class="modal">
+		  <span onclick="document.getElementById('popin').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  <form class="modal-content" action="/action_page.php">
+			<div class="login">
+			  <h1>Log In</h1>
+			  <p>Please fill in this form to log back in.</p>
+			  <hr>
+			  <label for="email"><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
+
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <label>
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+			  </label>
+
+			  <div class="clearfix">
+				<button type="submit" class="signupbtn">Log In</button>
+			  </div>
+			</div>
+		  </form>
+		</div>
+		<section>
+			<div class="sidebar">
+				<h1><i class="fas fa-bell" style="margin-right: 5px"></i>Subscribed</h1>
+				<h3><a href="../account/account.html">Artists</a></h3>
+				<h3><a href="../account/account.html">Producers</a></h3>
+				<h3><a href="../account/account.html">Choreographers</a></h3>
+				<h1><i class="fas fa-fire" style="color:orange;margin-right: 5px"></i>Trending</h1>
+				<div class="feed">
+					<img src="../img/up_arrow.png" class="up_arrow" />
+					<img src="../img/up_arrow.png" class="down_arrow" />
+					<div class="feed_content">
+						<p class="feeds"><a href="../news/news1.html">Apple announces new noise cancellation AirPods</a></p>
+						<p class="feeds"><a href="../news/news2.html">Fischerspooner’s Casey Spooner Says Madonna Didn’t Pay or Credit Him for Madame X Song</a></p>
+						
+						<p class="feeds"><a href="../news/news3.html">Kanye’s New Opera Nebuchadnezzar Live Stream Announced</a></p>
+						<p class="feeds"><a href="../news/news4.html">Watch King Princess Perform “1950” and “Hit the Back” on SNL</a></p>
+					</div>
+					
+				</div>
+			</div>
+			<article>
+				<div id="account">
+				<div id="bg">
+				<img src="../img/user.png" alt="Profile Photo" id="avatar">
+				</div>
+				<div id="content">
+				<h2>Engaging introduction</h2>
+					<p>Make a few notes on a piece of paper to begin. Jot down your name, and where you’re from. Add what you sound like, then your influences. This will help you shape a sentence or two as an introduction. Make it engaging, and concise.</p>
+					<p>Think about tone as well. Depending on your style of music, and your personality, you may want to inject some humor into your bio.</p>
+				<div id="reference">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>content from https://bandzoogle.com/blog/how-to-write-an-effective-musician-bio-with-examples</div>
+				</div>
+					<img src="../img/rockband.jpeg" alt="band" id="img">
+				</div>
+			</article>
+		</section>
+				
+		<footer>
+			<p style="color:white;">Designed By Olakunle and Xiaoman</p>
+			
+			<a href="privacy.html">&copy;Privacy</a>
+			<br>
+			<a href="terms.html">Terms of Use</a>
+		</footer>
+		
+		
+	</body>
+</html>

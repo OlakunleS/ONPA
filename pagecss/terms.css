@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+}
+
+.content{
+	padding-left:100px;
+	padding-right:100px;
+	padding-bottom:20px;
+	padding-top: 20px;
+	margin:30px 100px;
+	background-color:whitesmoke;
+	line-height:1.8;
+}
+
+.title{
+	background:linear-gradient(180deg, #e53935 0%, #e35d5b 100%); 
+	margin:0;
+	padding:50px 0px;
+	color:white;
+	text-align: center;
+	width:100%;
+	clear: both;
+}
+
+.content p{
+	text-indent: 30px;
+}
+
+
+.active1{
+	color:orange;
+	text-decoration: none;
+}

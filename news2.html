@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ONPA</title>
+		<link rel="stylesheet" type="text/css" href="../ONPA/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../ONPA/pagecss/news.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+		<script src="../JavaScript/main.js"></script>
+		
+	</head>
+	<body>
+		<!-- Navigation Bar Horizontal -->
+		<nav class="navhorizontal">
+		<ul >
+			<li>
+				<img src="img/onpalogo.png" alt="ONPA">
+			</li>
+			<li title="Home">
+				<a href="index.html">Home</a>
+			</li>
+			
+			<li title="About">
+				<a href="about.html">About</a>
+			</li>
+			
+			<li title="Tour">
+				<a href="tours.html"> Tours </a>
+			</li>
+			
+			<li title="Shop">
+				<a href="shop.html">Shop</a>
+			</li>
+			<li>
+					<!-- Login Pop up screen -->
+				<a href="../signup/signup.html" id="register">Register</a>
+				<button onclick="document.getElementById('popin').style.display='block'" id="register">Login</button>
+				<li class="searchbar">
+					<form action="../action_page.php">
+						<input type=text list=“searchbar” placeholder="Search..."/>
+						<button type="submit"><i class="fa fa-search"></i></button>
+						<datalist id=“searchbar”>
+							<option value=“Musician” />
+							<option value=“Album” />
+							<option value=“Trailer” />
+						</datalist>
+						</form>
+				</li>
+				
+		</ul>
+			<div id="popin" class="modal">
+		  <span onclick="document.getElementById('popin').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  <form class="modal-content" action="/action_page.php">
+			<div class="login">
+			  <h1>Log In</h1>
+			  <p>Please fill in this form to log back in.</p>
+			  <hr>
+			  <label for="email"><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
+
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <label>
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+			  </label>
+
+			  <div class="clearfix">
+				<button type="submit" class="signupbtn">Log In</button>
+			  </div>
+			</div>
+		  </form>
+		</div>
+		</nav>
+			<section>
+				<div class="sidebar">
+				<h1><i class="fas fa-bell"style="margin-right: 5px"></i>Subscribed</h1>
+				<h3>Artists</h3>
+				<ul id="artists">
+					<li><a href="../account/account.html">User 1</a></li>
+					<li><a href="../account/account.html">User 2</a></li>
+					<li><a href="../account/account.html">User 3</a></li>
+				</ul>
+				<h3>Producers</h3>
+				<ul id="producers">
+					<li><a href="../account/account.html">User 1</a></li>
+					<li><a href="../account/account.html">User 2</a></li>
+					<li><a href="../account/account.html">User 3</a></li>
+				</ul>
+				<h3>Choreographers</h3>
+				<ul id="Choreographers">
+					<li><a href="../account/account.html">User 1</a></li>
+					<li><a href="../account/account.html">User 2</a></li>
+					<li><a href="../account/account.html">User 3</a></li>
+				</ul>
+				<h1><i class="fas fa-fire" style="color:orange;margin-right: 5px"></i>Trending</h1>
+				<div class="feed">
+					<img src="../img/up_arrow.png" class="up_arrow" />
+					<img src="../img/up_arrow.png" class="down_arrow" />
+					<div class="feed_content">
+						<p class="feeds"><a href="../news/news1.html">Apple announces new noise cancellation AirPods</a></p>
+						<p class="feeds"><a href="../news/news2.html">Fischerspooner’s Casey Spooner Says Madonna Didn’t Pay or Credit Him for Madame X Song</a></p>
+						
+						<p class="feeds"><a href="../news/news3.html">Kanye’s New Opera Nebuchadnezzar Live Stream Announced</a></p>
+						<p class="feeds"><a href="../news/news4.html">Watch King Princess Perform “1950” and “Hit the Back” on SNL</a></p>
+					</div>
+					
+				</div>
+			</div>
+		<article>
+		<div id="content">
+           <h1>Fischerspooner’s Casey Spooner Says Madonna Didn’t Pay or Credit Him for Madame X Song</h1>
+			<img src="../img/SpoonerMadonna.jpeg" id="newsimg" alt="SpoonerMadonna">
+           <h4>Spooner on not being compensated or credited for “God Control”: “I HAVE HAD ENOUGH”</h4>
+			<h4>Casey Spooner, March 2019 (Photo by Victor Boyko/Getty Images) <br/> Madonna, May 2019 (Photo by Michael Campanella/Getty Images)</h4>
+           <p id="p1">
+               Former Fischerspooner member Casey Spooner has accused Madonna and French producer Mirwais of failing to credit or compensate him for contributions to her song “God Control.”<br/><br/>“God Control” appears on Madame X, which came out in June. In a series of Instagram stories posted and viewed by Pitchfork on Saturday, Spooner said that in December 2017 he worked with Mirwais, who produced Madame X, in December 2017. At the time, Spooner understood that his work editing and tweaking a melody on one track was for for the producer’s solo album, which was later shelved. Spooner wrote that in June of this year, he listened to “God Control” and was shocked to hear his 2017 work included in the song.<br/><br/>Spooner said his efforts to contact Mirwais for clarification went unanswered for several weeks before representatives from Madonna’s management and legal teams got in touch with him. According to Spooner, Madonna’s legal team had offered him $10,000 as an advance on publishing compensation and 15% writing credit.<br/><br/>In the string of Instagram stories, Spooner posted additional, undated screenshots of e-mails about the situation, one of which cited a phone call with Mike Goldsmith, Madonna’s lawyer. In that one, the sender said that Madonna “had no idea that Casey had been involved with writing the song. (Mirwais apparently claims that he told her, but Madonna says he didn’t.)” The e-mail also stated that Goldsmith indicated that they’d be willing to increase Spooner’s advance to $25,000 in order to avoid a longer legal battle.<br/><br/>The second e-mail annotated Spooner's legal standing within French copyright laws and confirmed that he could have a case against the producer. It is not clear who sent either message to Spooner.<br/><br/>Spooner also posted his early demo of “God Control” and a photograph of signature lines for him, Mirwais, and Madonna, which you can view below. In the caption for the latter, Spooner estimated that he’d only see about $10,000 of a $25,000 settlement after covering taxes and his legal fees. “It’s been an endless nightmare of lawyers and waiting and more emails.....and for what?!,” he wrote. Pitchfork has contacted representatives for Spooner and Madonna for comment.<br/><br/>This isn’t the first spell of trouble Madonna has had around “God Control.” The song’s video features a graphic depiction of a nightclub shooting, which Parkland shooting survivor and activist Emma Gonzalez criticized as “fucked up” and harmful to other survivors of gun violence.
+           </p>
+			<p id="reference">News from https://pitchfork.com/news/fischerspooners-casey-spooner-says-madonna-didnt-pay-or-credit-him-for-madame-x-song/</p>
+		</div>
+				</article>
+		</section>
+	
+		<footer>
+			<p style="color:white;">Designed By Olakunle and Xiaoman</p>
+			
+			<a href="privacy.html">&copy;Privacy</a>
+			<br>
+			<a href="terms.html">Terms of Use</a>
+		</footer>
+		
+	</body>
+</html>
